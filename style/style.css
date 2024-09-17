@@ -1,0 +1,161 @@
+html {
+    background-color: white;
+    color: black;
+    margin: 0;
+    max-height: 100vh;
+    max-width: 100vw;
+    cursor: url(../../images/pointer.png), auto;
+  }
+  
+  /* ABC Diatype */
+  @font-face {
+    font-family: "ABC Diatype";
+    src: url("../fonts/webfontkit/abc-diatype-bold-webfont.woff") format("woff"),
+    url("../fonts/webfontkit/abc-diatype-bold-webfont.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+    }
+  
+  /* Arial Narrow */
+  @font-face {
+    font-family: "Arial Narrow";
+    src: url("../fonts/webfontkit/arial-narrow-webfont.woff") format("woff"),
+    url("../fonts/webfontkit/arial-narrow-webfont.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  body {
+    margin: 0;
+    overflow-x: hidden;
+    /* overflow-y: hidden;  */
+    display:flex;
+  }
+  
+  a {
+    color: black;
+    font-family: "Arial Narrow";
+    font-weight: normal;
+    text-decoration: none;
+  }
+  
+  
+  /* Hello */
+  h1 {
+    position: absolute;
+    right: 0%;
+    top: 10%;
+    font-family: "ABC Diatype";
+    font-weight: normal;
+    font-size: 150px;
+    line-height: 1.4;
+    margin: 0 0 10px -4px;
+    color: #000000;
+  }
+  
+  .first {
+    margin-right: 60vw;
+  }
+  h2 {
+  font-size: 1.1em;
+  font-family: 'Arial Narrow';
+  font-weight: 100;
+  }
+  
+  .header {
+    position: absolute;
+    top: 4%;
+    right: 3%
+  }
+  .description {
+    position:absolute;
+    bottom: 5%;
+    right: 3%;
+    left: 50%;
+    text-align: right;
+  }
+  
+  .pic {
+    background-position: 15% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0%;
+    bottom: 5%;
+    z-index:400;
+    width: 10%;
+    height: 10%;;
+  }
+  
+  .pic1 {
+    background-image: url("../mail_icon.svg");
+  }
+  
+  .break {
+    display: none;
+  }
+  
+  .revbreak {
+    display: inline;
+  }
+  @media screen and (max-width: 595px), (orientation:portrait){
+    .pic {
+      background-position: 50% 50%;
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: absolute;
+      width: 100vw;
+      margin: auto;
+    }
+  
+    .pic1 {
+      top: 18vh;
+    }
+  
+    .pic2 {
+      top: 18vh;
+    }
+  
+    .pic3 {
+      top: 18vh;
+    }
+    
+    .description {
+      position: absolute;
+      top: 83vh;
+      right: 13%;
+      left: 14%;
+      text-align: left;
+    }
+   
+    .first {
+      margin-right: 0;
+      left: -89vw;
+      margin-left: 0px;
+      font-size:100px;
+    }
+  
+    .second {
+      font-size:100px;
+
+      margin-top: 15vh;
+      left: -89vw;
+    }
+  
+    .header {
+      right: 0;
+      top: 7%;
+    }
+  
+    .h1 {
+      font-size: 9vh;
+    }
+  
+    .break {
+      display: inline;
+    }
+  
+    .revbreak {
+      display: none;
+    }
+  }
